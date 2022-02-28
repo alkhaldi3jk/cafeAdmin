@@ -9,6 +9,7 @@ import NewUser from "./pages/newUser/NewUser";
 import ProductList from "./pages/productList/ProductList";
 import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
+import Login from "./pages/login/Login";
 
 function App() {
   return (
@@ -16,22 +17,27 @@ function App() {
       <Topbar />
       <div className="container">
         <Sidebar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
+  
+          <Routes>
+            <Route exact path="/" element={<Login />} />
 
-          <Route path="/users" element={<UserList />} />
+            <Route exact path="/home" element={<Home />} />
 
-          <Route path="/user/:userId" element={<User />} />
+            <Route path="/users" element={<UserList />} />
 
-          <Route path="/newUser" element={<NewUser />} />
+            <Route path="/user/:userId" element={<User />} />
 
-          <Route path="/products" element={<ProductList />} />
+            <Route path="/newUser" element={<NewUser />} />
 
-          <Route path="/product/:productId" element={<Product />} />
+            <Route path="/products" element={<ProductList />} />
 
-          <Route path="/newproduct" element={<NewProduct />} />
-        </Routes>
+            <Route path="/product/:productId" element={<Product />} />
+
+            <Route path="/newproduct" element={<NewProduct />} />
+          </Routes>
+        
       </div>
+      <div></div>
     </>
   );
 }
