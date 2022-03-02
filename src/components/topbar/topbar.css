@@ -3,8 +3,32 @@
   height: 50px;
   background-color: white;
   position: sticky;
-  top: 0;
+  top: 40px;
   z-index: 999;
+}
+
+.switch {
+  /* bottom: 40; */
+  margin-bottom: 40px;
+}
+
+.topRight p {
+  margin-bottom: 30px;
+  margin-right: 500px;
+  text-align: center;
+}
+
+.topRightNumber h1 {
+ font-size: 12px;
+ margin-top: 50px;
+}
+
+
+.toptext {
+  text-align: center;
+  right: "70px";
+  font-size: "50px";
+  color: red;
 }
 
 .topbarWrapper {
@@ -16,10 +40,25 @@
 }
 
 .logo {
+  font-weight: "700";
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 20px;
+  bottom: 20px;
+}
+
+.topLeft .logo p {
+  font-size: 3px;
+  bottom: 20px;
+}
+
+.logo1 {
   font-weight: bold;
   font-size: 30px;
-  color: darkblue;
-  cursor: pointer;
+  color: red;
+  /* cursor: pointer; */
+  right: 120;
 }
 
 .topRight {
@@ -32,6 +71,7 @@
   cursor: pointer;
   margin-right: 10px;
   color: #555;
+  margin-bottom: 30px;
 }
 
 .topIconBadge {
@@ -54,4 +94,14 @@
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.supportButton {
+  margin-top: 50px;
+  /* margin-left: 120px; */
+}
+
+.totalButton {
+  margin-top: 5px;
 }
