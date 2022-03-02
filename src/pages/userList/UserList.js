@@ -4,6 +4,13 @@ import { DeleteOutline } from "@material-ui/icons";
 import { userRows } from "../../dummyData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Search from "./Search";
+import "./Search.css";
+import MainContainer from "./MainContainer";
+import "./MainContainer.css";
+import Tabs from "./TopNavbar";
+import MainRightTopCard from "./MainRightTopCard";
+
 
 export default function UserList() {
   const [data, setData] = useState(userRows);
@@ -59,8 +66,16 @@ export default function UserList() {
   ];
 
   return (
+   
     <div className="userList">
+      <MainContainer/>
+      <MainRightTopCard/>
+      <span className="title">Orders</span>
+       <Tabs/>
+       <Search/>
+       {/* <MainContainer/>  */}
       <DataGrid
+      style={{marginTop: "20px", }}
         rows={data}
         disableSelectionOnClick
         columns={columns}
@@ -68,5 +83,6 @@ export default function UserList() {
         checkboxSelection
       />
     </div>
+  
   );
 }
